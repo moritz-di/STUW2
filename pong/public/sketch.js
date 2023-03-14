@@ -23,7 +23,7 @@ function setup() {
   paddles[1] = new Paddle(width - 40, height / 2 - 50);
 
   // Connect to the server
-  socket = io.connect('http://localhost:3000');
+  socket = io.connect('http://localhost:8080');
 
   // Set up the socket listeners
   socket.on('paddleMoved', function (data) {
